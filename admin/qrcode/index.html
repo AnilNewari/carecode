@@ -5,7 +5,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>safety qr code</title>
+    <title>care qr code</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=montserrat:200,300,400,500,700,900|open-sans:300,400,500,800"
@@ -61,7 +61,7 @@
                 let qID = randomString + qrNumber;
                 qrIds.push(qID);
                 //console.log(qID);
-                let qrId = "https://surkshacode.com/safetycode/" + qID;
+                let qrId = "https://surkshacode.com/carecode/" + qID;
                 qr_cards = qr_cards + `<div class="card-container"> <div class="image-holder"> <img src="./qrcodebg.jpg" alt=""> </div> <div class="card-content"> <div class="qr-code" id="qrcode-${i}" qr-id="${qrId}"></div> </div> </div>`
                 if (i % 9 == 0) {
                     setQrCards(pageIndex, i, qr_cards)

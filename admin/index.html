@@ -2,19 +2,19 @@
 <html lang="en">
 
 <head>
-    <title>Safety Code Partner</title>
+    <title>Care Code Partner</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Your SAFETY with Safety QR Code. Instantly get notified on phone, if your vehicle requires attention">
+        content="Your SAFETY with Care QR Code. Instantly get notified on phone, if your vehicle requires attention">
     <meta name="keywords"
-        content="Your SAFETY with Safety QR Code. Instantly get notified on phone, if your vehicle requires attention">
+        content="Your SAFETY with Care QR Code. Instantly get notified on phone, if your vehicle requires attention">
     <link rel="icon" href="https://s.qeeda.in/f/favicon.png" type="image/gif" sizes="16x16">
-    <meta property="og:title" content="Your SAFETY with Safety QR Code">
-    <meta property="og:site_name" content="Your SAFETY with Safety QR Code">
-    <meta property="og:url" content="https://safetycode.in/">
-    <meta property="og:image" content="https://safetycode.in/assets/imgs/qrimage.png">
+    <meta property="og:title" content="Your SAFETY with Care QR Code">
+    <meta property="og:site_name" content="Your SAFETY with Care QR Code">
+    <meta property="og:url" content="https://carecode.in/">
+    <meta property="og:image" content="https://carecode.in/assets/imgs/qrimage.png">
     <meta property="og:description"
-        content="Your SAFETY with Safety QR Code. Instantly get notified on phone, if your vehicle requires attention">
+        content="Your SAFETY with Care QR Code. Instantly get notified on phone, if your vehicle requires attention">
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;700;900&family=Ubuntu:wght@300;400;500;700&display=swap"
         rel="stylesheet">
@@ -42,7 +42,7 @@
     <div class="container-fluid">
         <div style="text-align: center; margin-top: 10px;">
             <!-- <img src="assets/pm_logo.png" width="100px"> -->
-            <span class="title">Safety Code Vehicle Panel</span>
+            <span class="title">Care Code Vehicle Panel</span>
         </div>
         <div class="top-form" id="top-form">
             <div>
@@ -230,9 +230,7 @@
             callApi(code);
         }
         async function callApi(code) {
-            //http://localhost:4200/admin
-            //var url = "http://localhost:1337/safteycode/admin/vehicle/" + code
-            var url = "https://surkshacode.com/safteycode/admin/vehicle/" + code
+            var url = "https://api.carecode.com/carecode/admin/vehicle/" + code
             try {
                 var response = await fetch(url);
             } catch (error) {

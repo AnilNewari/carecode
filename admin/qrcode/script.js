@@ -47,9 +47,7 @@ function addQrCards() {
     const randomString = Math.random().toString(36).substring(2, 20);
     let qID = randomString + qrNumber;
     qrIds.push(qID);
-    //console.log(qID);
-    //https://surkshacode.com/safetycode/
-    let qrId = 'http://api.safetycode.in/safetycode/' + qID;
+    let qrId = 'http://api.carecode.in/carecode/' + qID;
     qr_cards =
       qr_cards +
       `<div class="card-container"> <div class="image-holder"> <img src="./qrcodebg.jpg" alt=""> </div> <div class="card-content"> <div class="qr-code" id="qrcode-${i}" qr-id="${qrId}"></div> </div> </div>`;
