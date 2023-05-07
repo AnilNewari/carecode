@@ -83,7 +83,7 @@ async function saveCodesRemote(codes) {
   let options = {
     method: "POST",
     headers: {
-      "Content-Type": "application/json",
+      "content-type": "application/json",
     },
     body: {"ids": codes},
   }
