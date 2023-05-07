@@ -80,12 +80,13 @@ async function saveCodesRemote(codes) {
   let ids = JSON.stringify(codes);
   //console.log("qr ids", ids);
   var url = "https://api.carecode.in/carecode/add-qrid";
+  //var url = "http://localhost:1337/carecode/add-qrid";
   let options = {
     method: "POST",
     headers: {
       "content-type": "application/json",
     },
-    body: {"ids": codes},
+    body: JSON.stringify({ids:codes}),
   }
   console.log('options', options);
   try {

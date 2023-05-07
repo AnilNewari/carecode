@@ -55,6 +55,7 @@
 .image-holder img {
   max-width: 100%;
   background-color: white;
+  border: 1px solid;
 }
 .card-content {
   position: absolute;
