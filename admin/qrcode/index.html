@@ -16,9 +16,12 @@
 
 <body data-gr-c-s-loaded="true" class="body">
     <div class="print-hide top-div">
-        <input type="number" id="pageStart" min="1" placeholder="Page Start">
-        <input type="number" id="pageEnd" min="1" placeholder="Page End">
-        <button onclick="onButtonClick()" class="create-btn">Create Codes</button>
+        <div>
+            <input type="number" id="pageStart" min="1" placeholder="Page Start">
+            <input type="number" id="pageEnd" min="1" placeholder="Page End">
+            <button onclick="onButtonClick()" class="create-btn">Create Codes</button>
+        </div>
+        <div class="loader" id="loader" style="display: none;"></div>
     </div>
     <div id="body">
     </div>
